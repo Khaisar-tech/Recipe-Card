@@ -1,0 +1,169 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* ===== Root Variables ===== */
+:root {
+    --primary-font: "Young Serif", serif;
+    --secondary-font: "Outfit", sans-serif;
+}
+
+/* ===== Global Styles ===== */
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: var(--primary-font);
+    height: 100vh;
+    margin: 0;
+}
+
+/* ===== Main Container ===== */
+.main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 200vh;
+    margin: 50px;
+}
+
+/* ===== Recipe Card ===== */
+.container {
+    width: 25vw;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: var(--primary-font);
+    height: 98%;
+}
+
+/* ===== Image Section ===== */
+.upside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 95%;
+    height: 20%;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ===== Content Section ===== */
+.down-side {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: left;
+}
+
+.down-side>p {
+    font-size: 10px;
+    font-family: var(--secondary-font);
+    font-weight: 200;
+     color: hsl(30, 10%, 34%);
+    margin-top: -10px;
+}
+
+/* ===== Preparation Section ===== */
+.preparation {
+    width: 22vw;
+    padding: 5px;
+    background-color: hsl(332, 48%, 94%);
+    color: hsl(30, 10%, 34%);
+}
+
+.preparation ul {
+    font-size: 10px;
+    font-family: var(--secondary-font);
+    font-weight: 200;
+    margin-left: 0;
+}
+
+/* ===== Ingredients Section ===== */
+.ingredients ul {
+    font-size: 10px;
+    font-family: var(--secondary-font);
+     color: hsl(30, 10%, 34%);
+    font-weight: 300;
+}
+
+/* ===== Headings ===== */
+.heading {
+    margin-bottom: -5px;
+}
+
+/* ===== Separation Line ===== */
+.separation {
+    height: 2px;
+    width: 35vw;
+    background-color: hsl(332, 48%, 94%);
+    margin: 10px 0;
+}
+
+/* ===== Instructions ===== */
+.instructions ol {
+    font-size: 10px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+/* ===== Nutrition ===== */
+.nutrition>p {
+    font-weight: 200;
+    font-size: 10px;
+    font-family: var(--secondary-font);
+}
+
+.nutrition table {
+    font-family: var(--secondary-font);
+    font-size: 10px;
+    width: 90%;
+    color: hsl(30, 10%, 34%);
+    border-collapse: collapse;
+}
+
+.nutrition table td,
+.nutrition table th {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 6px 0;
+    text-align: left;
+}
+
+.nutrition table tr:last-child td,
+.nutrition table tr:last-child th {
+    border-bottom: none;
+}
+
+/* ===== Headings Color ===== */
+h4 {
+    color: hsl(30, 10%, 34%);
+}
+
+    @media only screen and (max-width: 800px) {
+    body {
+        background: none;            /* removes background color or image */
+        background-color: black;     /* optional solid color */
+        overflow: hidden;            /* prevents scroll showing background */
+    }
+
+    .main {
+        margin: 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 90vw;                 /* fit smaller screens */
+        height: auto;                /* allow flexible height */
+        border-radius: 10px;
+    }
+    .preparation{
+        background-color:hsl(332, 48%, 94%);
+        width:80vw;
+    }
+
+}
